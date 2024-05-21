@@ -5,7 +5,7 @@ int b;
 a=10;
 b=a;
 Console.WriteLine("valor de a:"+a);
-Console.WriteLine("valor de b:"+b); */
+Console.WriteLine("valor de b:"+b); 
 
 //invertir numero 
 /*No sé que problema hay en esta rama
@@ -93,11 +93,11 @@ Console.WriteLine("5) Salir");
 int opcion = int.Parse(Console.ReadLine()); // is this even valid???? HELPPPP
 
 /*Pide al usuario dos numeros*/ 
-string s1, s2; int num1=0, num2=0; 
+string s1, s2; int numero1=0, numero2=0; 
 
 Console.WriteLine("Ingresar el primer numero");
 s1 = Console.ReadLine(); //guardo el valor en un string. 
-while (!int.TryParse(s1, out num1))  //verifico si la conversión a entero fue exitosa.
+while (!int.TryParse(s1, out numero1))  //verifico si la conversión a entero fue exitosa.
 {
     Console.Write("Entrada no válida. Ingrese un número entero válido: ");
     s1 = Console.ReadLine();
@@ -105,7 +105,7 @@ while (!int.TryParse(s1, out num1))  //verifico si la conversión a entero fue e
 
 Console.WriteLine("Ingresar el segundo numero");
 s2 = Console.ReadLine(); //guardo el valor en un string. 
-while (!int.TryParse(s2, out num2))  //verifico si la conversión a entero fue exitosa.
+while (!int.TryParse(s2, out numero2))  //verifico si la conversión a entero fue exitosa.
 {
     Console.Write("Entrada no válida. Ingrese un número entero válido: ");
     s2 = Console.ReadLine();
@@ -115,13 +115,13 @@ do
 {
     switch (opcion)
     {
-        case 1: sumarNumeros(num1, num2); 
+        case 1: sumarNumeros(numero1, numero2); 
         break;
-        case 2: restarNumeros(num1, num2);  
+        case 2: restarNumeros(numero1, numero2);  
         break;
-        case 3: dividirNumeros(num1, num2); 
+        case 3: dividirNumeros(numero1, numero2); 
         break;
-        case 4: multiplicarNumeros(num1, num2);
+        case 4: multiplicarNumeros(numero1, numero2);
         break;
     }    
 } while (opcion!=5);
@@ -152,7 +152,7 @@ void restarNumeros(int num1, int num2)
     } 
 }
 
-void dividirNumeros(int num1, num2)
+void dividirNumeros(int num1, int num2)
 {   
     Console.WriteLine("¿Cómo quiere dividir?");
     Console.WriteLine($"1) {num1} / {num2}");
@@ -183,7 +183,7 @@ void dividirNumeros(int num1, num2)
     }
 }
 
-void multiplicarNumeros(int num1, num2)
+void multiplicarNumeros(int num1, int num2)
 {
     Console.WriteLine("Resultado: "+(num1*num2)); 
 }
